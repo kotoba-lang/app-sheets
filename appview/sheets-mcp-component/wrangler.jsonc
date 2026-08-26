@@ -1,13 +1,13 @@
 {
   "name": "kotodama-r8fitt3i",
-  "main": "svelte/.svelte-kit/cloudflare/_worker.js",
+  "main": "src/app.ts",
   "compatibility_date": "2025-03-17",
   "compatibility_flags": [
     "nodejs_compat",
     "nodejs_als"
   ],
   "assets": {
-    "directory": "./svelte/.svelte-kit/cloudflare/client",
+    "directory": "./cljs/public",
     "binding": "ASSETS",
     "html_handling": "auto-trailing-slash",
     "not_found_handling": "single-page-application"
@@ -17,7 +17,7 @@
     "APP_DESCRIPTION": "Thin edge facade; Google Sheets OAuth and sync run in BPMN + Zeebe Python",
     "APP_DISPLAY_NAME": "Sheets",
     "APP_EMBED_URL": "https://r8fitt3i.etzhayyim.com/?embed=1",
-    "APP_FRAMEWORK": "sveltekit-edge-bff",
+    "APP_FRAMEWORK": "cljs-reagent-edge-bff",
     "AGENTGATEWAY_MCP_ROUTER_URL": "https://mcp.etzhayyim.com/xrpc/com.etzhayyim.mcp.message",
     "APP_NANOID": "r8fitt3i",
     "APP_PERFORMER_TYPE": "system",
