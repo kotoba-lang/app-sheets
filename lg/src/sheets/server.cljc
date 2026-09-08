@@ -14,7 +14,7 @@
   Persistence = kotoba datomic (graph sheets-v1). x-api-key (LG_SHEETS_API_KEY)
   optional auth; atproto actor-worker x-internal-trust is the edge boundary."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [sheets.handlers :as handlers]
             [sheets.kotoba-datomic :as kd]
             [sheets.store :as store]))

@@ -9,7 +9,7 @@
   Endpoint resolution honors KOTOBA_XRPC_URL / KOTOBA_URL (default in-cluster
   Service :8080). Auth = Bearer JWT (KOTOBA_BEARER)."
   (:require [cheshire.core :as json]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [sheets.edn-tx :as edn-tx])
   (:import [java.security MessageDigest]))
 

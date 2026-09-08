@@ -6,7 +6,7 @@
   reshapes results into Google Sheets v4 / Microsoft Graph workbook JSON. Cell
   values are strings throughout (no-float rule). All maps are string-keyed (JSON
   wire shape). Synchronous — the Python `async` handlers are plain functions."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [sheets.a1 :as a1]
             [sheets.ids :as ids]
             [sheets.mapping :as mapping]

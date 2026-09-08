@@ -4,7 +4,7 @@
   Canonical entity id = \"sheet:book:{slug}\" (the datomic entity ref).
   Path-based DID    = \"did:web:sheets.etzhayyim.com:spreadsheet:{slug}\".
   AT URI            = \"at://{did}/ai.etzhayyim.apps.sheets.spreadsheet/{slug}\"."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:private slug-alphabet "0123456789abcdefghijklmnopqrstuvwxyz")
 (def ^:private domain "sheets.etzhayyim.com")

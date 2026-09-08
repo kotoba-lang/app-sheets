@@ -7,7 +7,7 @@
     - \"Sheet1\"         -> {:sheet ... :r0 nil ...}   (whole sheet)
 
   An A1Range is a plain map {:sheet :r0 :c0 :r1 :c1} (NamedTuple in Python)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (def ^:private cell-re #"^([A-Za-z]+)([0-9]+)$")
 
@@ -18,7 +18,7 @@
 
 (defn col->idx [col]
   (let [n (reduce (fn [n ch] (+ (* n 26) (- (int ch) (int \A)) 1))
-                  0 (str/upper-case col))]
+                  0 (str/upper col))]
     (dec n)))
 
 (defn idx->col [idx]
