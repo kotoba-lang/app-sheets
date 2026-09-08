@@ -5,7 +5,7 @@
   `encode` / `encode-tx-data` are `pr-str` over plain clj data (vectors of
   [:db/add E A V] ops with keyword attributes). `parse-edn-value` decodes a
   single EDN scalar string returned by the kotoba server (tolerant)."
-  (:require [clojure.string :as str]))
+  (:require [kotoba.lang.text :as str]))
 
 (defn ->attr
   "\"sheet/type\" or :sheet/type -> :sheet/type keyword (strips a leading colon)."

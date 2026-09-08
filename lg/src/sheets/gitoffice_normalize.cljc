@@ -5,7 +5,7 @@
   Converts the workbook blob (:sheet/gridJson = {title: [[cell]]}) to sparse
   [:db/add e a v] ops (each non-empty cell its own datom, keyed by absolute A1
   ref \"<sheet>!<A1>\") and rows -> blob trimmed to the non-empty bounding box."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [sheets.edn-tx :refer [tx-add]]))
 
 ;; --- A1 notation ------------------------------------------------------------

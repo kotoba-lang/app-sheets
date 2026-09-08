@@ -8,7 +8,7 @@
   Both speak the same EDN tx-op vocabulary ([:db/add ...] / [:db/retract ...] /
   [:db.fn/retractEntity ...]), so the handlers are storage-agnostic. Methods are
   synchronous (babashka.http-client is blocking) — the Python `async` is dropped."
-  (:require [clojure.string :as str]
+  (:require [kotoba.lang.text :as str]
             [sheets.ids :as ids]
             [sheets.edn-tx :as edn-tx]
             [sheets.kotoba-datomic :as kd]))
