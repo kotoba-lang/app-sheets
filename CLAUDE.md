@@ -58,7 +58,7 @@ test/sheets/{handlers,gitoffice_normalize}_test.cljc   # 13 tests / 43 assertion
 
 ## Test
 ```bash
-cd 60-apps/etzhayyim-project-sheets/lg && bb run_tests.clj
+cd 60-apps/etzhayyim-project-sheets/lg && kbb run_tests.cljk
 cd 50-infra/cloudflare/workers/sheets-compat && node --test test/*.test.ts
 ```
 
@@ -72,8 +72,8 @@ JSON→`cheshire`, FastAPI→`org.httpkit.server` (`sheets.server`). Map keys st
 (JSON wire shape). Stores are synchronous (the Python `async` is dropped).
 
 ```bash
-cd 60-apps/etzhayyim-project-sheets/lg && bb run_tests.clj   # clj twin: 13 tests / 43 assertions
-bb run -m sheets.server                                       # or `bb serve` (org.httpkit on :PORT)
+cd 60-apps/etzhayyim-project-sheets/lg && kbb run_tests.cljk   # clj twin: 13 tests / 43 assertions
+bb run -m sheets.server                                       # or `kbb -M:serve` (org.httpkit on :PORT)
 ```
 
 **Canonical (ADR-2606280030):** the `lg/src/sheets/*.cljc` twin is now the **canonical
